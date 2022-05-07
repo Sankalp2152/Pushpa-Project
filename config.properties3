@@ -1,0 +1,13 @@
+url1=https://en.wikipedia.org/wiki/Pushpa:_The_Rise
+url2=https://www.imdb.com/title/tt9389998/?ref_=nv_sr_srsg_0
+
+WikiDate:
+(//table[@class='infobox vevent']//td[@class='infobox-data'])[10]
+
+WikiReleaseDate://table[@class='infobox vevent']//div[text()='Release date']
+
+WikiCountryName://table[@class='infobox vevent']//td[text()='India']
+
+IMDB RELEASE DATE://section[@data-testid='Details']//a[text()='January 7, 2022 (United States)']
+
+IMDB CountryName://section[@data-testid='Details']//a[text()='India']
