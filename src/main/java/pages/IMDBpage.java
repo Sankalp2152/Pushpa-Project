@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 public class IMDBpage {
 
 	WebDriver driver;
-	@FindBy(xpath= "//section[@data-testid='Details']//a[text()='January 7, 2022 (United States)']")
+	@FindBy(xpath="//section[@data-testid='Details']//a[text()='January 7, 2022 (United States)']")
 	private WebElement releaseDate;
 	
-	@FindBy(xpath= "//section[@data-testid='Details']//a[text()='India']")
+	@FindBy(xpath="//section[@data-testid='Details']//a[text()='India']")
 	private WebElement countryName;
 	
 	public IMDBpage(WebDriver driver)

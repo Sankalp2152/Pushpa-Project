@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
 	public class Screenshot {
-	public static String capturescreen(WebDriver driver, String name) throws IOException {
+	public static String capturescreen1(WebDriver driver, String name) throws IOException {
 		 TakesScreenshot scrshot = (TakesScreenshot)driver;
 			File source= scrshot.getScreenshotAs(OutputType.FILE);
 			

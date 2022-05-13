@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class WIKIpage {
 
 	WebDriver driver;
+	
 	@FindBy(xpath= "(//table[@class='infobox vevent']//td[@class='infobox-data'])[10]")
 	private WebElement releaseDate1;
 	

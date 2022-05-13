@@ -20,7 +20,7 @@ public class ListenersClassPushpa extends BaseTestPushpa implements ITestListene
 		System.out.println("Test Case Failed : "+ result.getName());
 		try
 		{
-			Screenshot.capturescreen(driver, result.getName());
+			Screenshot.capturescreen1(driver, result.getName());
 		}
 		catch (IOException e) 
 		{

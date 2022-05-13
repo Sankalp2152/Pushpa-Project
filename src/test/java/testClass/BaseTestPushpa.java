@@ -1,5 +1,7 @@
 package testClass;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
@@ -15,6 +17,7 @@ public class BaseTestPushpa {
 	public IMDBpage ip;
 	public WIKIpage wp;
 	
+	@SuppressWarnings("deprecation")
 	@BeforeSuite 
 	public void LaunchSite1()
 	{
@@ -22,6 +25,7 @@ public class BaseTestPushpa {
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.imdb.com/title/tt9389998/?ref_=nv_sr_srsg_0");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 	@BeforeSuite
@@ -31,6 +35,7 @@ public class BaseTestPushpa {
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://en.wikipedia.org/wiki/Pushpa:_The_Rise");
+		
 	}
 	
 	@BeforeClass
